@@ -9,11 +9,11 @@ def twoSum(nums,k):   #brute force
     return -1
 
 
-def twoSum1(nums,k):  #optimised solution
+def twoSum1(nums,k):  #optimised solution 
     nums=sorted(nums)
     i=0
     j=len(nums)-1
-    while(i<len(nums)):
+    while(i<=len(nums)):
         if nums[i]+nums[j]<k:
             i=i+1
         else:
@@ -23,7 +23,9 @@ def twoSum1(nums,k):  #optimised solution
     return [-1,-1]
 
 
-a=[-6, 7, 1, -7, 6, 2]
+a=[-6, 7, 1, -7, 6, 2,1]
 n=3
-print(twoSum1(a,n))
+print(twoSum(a,n))
 
+#time complexity-nlogn+n
+#space complexity-1
