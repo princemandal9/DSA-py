@@ -1,3 +1,4 @@
+#Given an array nums of size n and an integer k, find the length of the longest sub-array that sums to k
 def longest(nums,k):
     longest_arr=0
     for i in range(len(nums)):
